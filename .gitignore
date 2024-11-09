@@ -1,0 +1,9 @@
+# invisible files
+.*
+!.gitignore
+!.gitkeep
+!.dockerignore
+!.env.sample
+
+#Dependencies packages
+node_modules/*
