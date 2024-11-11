@@ -1,0 +1,203 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #EEF7F0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+.section-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.title-bar {
+    width: 6px;
+    height: 30px;
+    background-color: #1FAF6C;
+    margin-right: 10px;
+}
+h1, h2 {
+    color: #333;
+    margin: 0;
+}
+.location-button {
+    background-color: #1FAF6C;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.winery-intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+.winery-image {
+    width: 40%;
+    height: auto;
+}
+.intro-content {
+    width: 60%;
+}
+.intro-text {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+.winery-info, .access, .staff-intro, .recommended-wines {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+.winery-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.winery-info th, .winery-info td {
+    padding: 8px 34px; /* 左右にさらにゆとりを持たせる */
+    border-bottom: 0.5px solid #1FAF6C;
+    text-align: left;
+}
+
+.winery-info th {
+    white-space: nowrap;
+    font-weight: normal;
+    color: #333;
+    position: relative;
+    padding-left: 30px; /* 見出しの前にスペースを追加 */
+}
+
+.winery-info th::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    right: 0;
+    width: 0.5px;
+    background-color: #1FAF6C;
+    margin-left: 8px; /* 縦線とテキストの間隔をさらに広げる */
+}
+
+.winery-info td {
+    color: #333;
+}
+
+.winery-info td a {
+    color: #333;
+    text-decoration: underline;
+}
+
+
+
+
+.access iframe {
+    margin-bottom: 40px;
+}
+.staff-intro {
+    text-align: center;
+}
+.staff-name {
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+.staff-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+.tsukurite-image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+}
+.staff-description {
+    line-height: 1.6;
+    margin-top: 15px;
+}
+.recommended-wines {
+    text-align: center;
+}
+.wine-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.wine-item {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* 画像とテキストを中央揃え */
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+.wine-image {
+    width: 70px;
+    height: auto;
+    flex-shrink: 0; /* 画像が縮小しないようにする */
+}
+.wine-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.wine-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.wine-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+.wine-item {
+    display: flex;
+    gap: 40px; /* wine-imageとwine-infoの間隔を広げる */
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+.wine-image {
+    width: 70px;
+    height: auto;
+    flex-shrink: 0; /* 画像が縮小しないように */
+}
+.wine-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.wine-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.wine-name {
+    font-weight: bold;
+    white-space: nowrap;
+}
+.wine-price {
+    font-weight: bold;
+    color: #666;
+    white-space: nowrap;
+}
+.wine-description {
+    margin-top: 5px;
+}
