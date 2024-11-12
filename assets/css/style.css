@@ -1,0 +1,184 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	デフォルトスタイル
+------------------------------------------------------------*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, figcaption, figure, section {
+	margin: 0;
+	padding: 0;
+	background: transparent;
+	border: 0;
+	outline: 0;
+	font-size: 1em;
+	box-sizing: border-box;
+}
+html {
+	font-size: 62.5%;
+}
+body, table, input, textarea, select, option {
+	font-family: "Noto Serif JP","ヒラギノ明朝 ProN W3","Hiragino Mincho ProN","游明朝",YuMincho,"HG明朝E","ＭＳ Ｐ明朝","ＭＳ 明朝",serif;
+}
+article, aside, canvas, details, figcaption, figure, footer, header, main, hgroup, menu, nav, section, summary {
+	display: block;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+chrome_annotation {
+	border: none !important;
+}
+:focus {
+	outline: 0;
+}
+ins {
+	text-decoration: none;
+}
+del {
+	text-decoration: line-through;
+}
+img {
+	vertical-align: top;
+	max-width: 100%;
+    height: auto;
+}
+address {
+	font-style: normal;
+}
+a,
+a:link {
+	color: #222;
+	text-decoration: none;
+	transition: opacity 0.3s;
+}
+a:visited {
+	color: #222;
+}
+a:hover {
+	color: #222;
+	opacity: 0.7;
+}
+a:active {
+	color: #222;
+}
+/*------------------------------------------------------------
+	レイアウト
+------------------------------------------------------------*/
+body {
+	min-width: 1280px;
+	color: #222;
+	font-size: 2rem;
+	font-weight: 600;
+	line-height: 1.5;
+	background-color: #FFF;
+}
+.fixed {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+#container {
+	text-align: left;
+}
+#main {
+	margin-bottom: 11.2rem;
+}
+/*------------------------------------------------------------
+	ヘッダー
+------------------------------------------------------------*/
+#gHeader {
+	margin: 0 auto;
+	padding: 3rem 2rem;
+	max-width: 96rem;
+	align-items: center;
+}
+#gHeader h1 {
+	width: 9.2rem;
+}
+#gHeader h1 a:hover {
+	opacity: 1;
+}
+#gNavi {
+	flex: 1;
+}
+#gNavi ul {
+	justify-content: flex-end;
+}
+#gNavi li {
+	margin-left: 6.1rem;
+}
+#gNavi a {
+	font-size: 1.6rem;
+	text-align: center;
+}
+#gNavi a .en {
+	margin-top: 0.2rem;
+	display: block;
+	color: #3B478C;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+/*------------------------------------------------------------
+	フッター
+------------------------------------------------------------*/
+#gFooter {
+	padding: 6rem 0 4.4rem;
+	background: #F2F3F9;
+}
+#gFooter .pageTop {
+	display: none;
+	position: fixed;
+	right: 4rem;
+	bottom: 4rem;
+	z-index: 70;
+}
+#gFooter .fLogo {
+	text-align: center;
+	margin-bottom: 6.6rem;
+}
+#gFooter .fLogo a:hover {
+	opacity: 1;
+}
+#gFooter .fNavi {
+	justify-content: center;
+	margin-bottom: 2.3rem;
+}
+#gFooter .fNavi li {
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+#gFooter .fNavi a {
+	margin: 0 3.4rem;
+}
+#gFooter .fLink {
+	justify-content: center;
+	margin-bottom: 5.5rem;
+}
+#gFooter .fLink a {
+	margin: 0 1.9rem;
+	font-size: 1.2rem;
+	font-weight: 300;
+}
+#gFooter .sns {
+	margin-bottom: 6rem;
+}
+#gFooter .sns .ttl {
+	margin-bottom: 2rem;
+	font-size: 1.2rem;
+	font-weight: 400;
+	text-align: center;
+}
+#gFooter .sns ul {
+	align-items: center;
+	justify-content: center;
+}
+#gFooter .sns li {
+	margin: 0 1.5rem;
+	width: 3.2rem;
+}
+#gFooter address {
+	font-size: 1rem;
+	font-weight: 400;
+	text-align: center;
+}

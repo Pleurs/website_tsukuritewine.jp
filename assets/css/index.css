@@ -1,0 +1,274 @@
+@charset "utf-8";
+/*------------------------------------------------------------
+	index
+------------------------------------------------------------*/
+.topMovie {
+	position: relative;
+	clip-path: inset(0);
+}
+.topMovie .movie {
+	height: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+}
+.topMovie .movie video {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	object-position: center 65%;
+}
+.topMovie .link {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 3.4rem;
+}
+.topMovie .link a {
+	padding-bottom: 7.8rem;
+	width: 19rem;
+	display: block;
+	color: #FFF;
+	font-size: 1.8rem;
+	font-weight: 700;
+	letter-spacing: 0.8px;
+	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.50);
+	text-align: center;
+	background: url(../img/index/arrow.svg) no-repeat center bottom;
+}
+#main .slideBox {
+	margin: 0 auto 8.5rem;
+	max-width: 120rem;
+	position: relative;
+}
+#main .slideBox .prev,
+#main .slideBox .next {
+	margin-top: -0.3rem;
+	position: absolute;
+	cursor: pointer;
+	top: 50%;
+	left: 1rem;
+	width: 4rem;
+	z-index: 10;
+	transition: .3s;
+	transform: translateY(-50%);
+}
+#main .slideBox .prev:hover,
+#main .slideBox .next:hover {
+	opacity: 0.7;
+}
+#main .slideBox .next {
+	left: auto;
+	right: 1rem;
+}
+#main .slideBox .slick-dots {
+	position: absolute;
+	left: 0;
+	bottom: -3rem;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	z-index: 10;
+}
+#main .slideBox .slick-dots li {
+	margin: 0 1rem;
+	width: 1.6rem;
+	height: 1.6rem;
+	border-radius: 50%;
+	background: none;
+	cursor: pointer;
+	background-color: #ccc;
+}
+#main .slideBox .slick-dots li button {
+	display: none;
+}
+#main .slideBox .slick-dots li.slick-active {
+	background-color: #3B478C;
+}
+#main .news {
+	margin-bottom: 4.5rem;
+}
+#main .news .content {
+	max-width: 67rem;
+}
+#main .news h2 {
+	margin-right: 2rem;
+	width: 17rem;
+	color: #3B478C;
+	font-size: 1.9rem;
+	font-weight: 400;
+}
+#main .news dl {
+	margin-top: 0.2rem;
+	flex: 1;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+#main .news dt {
+	float: left;
+}
+#main .news dd {
+	padding-left: 10.5rem;
+}
+#main .arrival {
+	margin-bottom: 7.2rem;
+	padding: 3.5rem 0 6.5rem;
+	background: #F2F3F9;
+}
+#main .arrival .content {
+	max-width: 108rem;
+}
+#main .arrival .shopLsit {
+	margin: -4rem 0 0;
+}
+#main .arrival .shopLsit li {
+	width: calc((100% - 12rem)/4);
+	margin: 4rem 4rem 0 0;
+	position: relative;
+}
+#main .arrival .shopLsit li:nth-child(4n) {
+	margin-right: 0;
+}
+#main .arrival .shopLsit a {
+	padding: 1rem;
+	height: 24rem;
+	display: block;
+	text-align: center;
+	background-color: #fff;
+}
+#main .arrival .shopLsit .ttl {
+	position: absolute;
+	left: 1rem;
+	top: 1rem;
+	color: #fff;
+	font-size: 1.4rem;
+	font-weight: 300;
+	padding: 0.1rem 0.9rem 0.2rem;
+	border-radius: 6px;
+	background: #D27F4D;
+	z-index: 1;
+}
+#main .arrival .shopLsit .ttl02 {
+	background: #385A92;
+}
+#main .arrival .shopLsit .ttl03 {
+	background: #06A4CF;
+}
+#main .arrival .shopLsit .ttl04 {
+	background: #D36D9A;
+}
+#main .arrival .shopLsit a img {
+	max-height: 100%;
+	width: auto;
+}
+#main .region {
+	margin: 0 auto 10rem;
+	max-width: 80rem;
+	position: relative;
+}
+#main .region .headLine01 {
+	position: absolute;
+	left: 1rem;
+	top: 18.5rem;
+}
+#main .region .map img {
+	margin-left: -1rem;
+}
+#main .region .map svg {
+	position: absolute;
+	left: -1rem;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+#main .region .map svg path {
+	fill: transparent;
+	cursor: pointer;
+}
+#main .region .txtList li a {
+	color: inherit;
+}
+#main .region .txtList li a:hover {
+	opacity: 1;
+}
+#main .region .txtList li {
+	position: absolute;
+	font-size: 2.8rem;
+}
+#main .region .txtList .add01 {
+	color: #6C4DB2;
+	left: 42.8rem;
+	top: 10rem;
+}
+#main .region .txtList .add02 {
+	color: #2F6DBD;
+	right: 17rem;
+	top: 35.5rem;
+}
+#main .region .txtList .add03 {
+	color: #32AD5B;
+	left: 28rem;
+	top: 40rem;
+}
+#main .region .txtList .add04 {
+	color: #319FD6;
+	right: 21rem;
+	top: 51.6rem;
+}
+#main .region .txtList .add05 {
+	color: #B8B63C;
+	left: 25.2rem;
+	top: 52.8rem;
+}
+#main .region .txtList .add06 {
+	color: #DA7F4A;
+	left: 11.1rem;
+	top: 57rem;
+}
+#main .region .txtList .add07 {
+	color: #46BCB9;
+	right: 37.1rem;
+	top: 65.1rem;
+}
+#main .region .txtList .add08 {
+	color: #E568A2;
+	left: 21.5rem;
+	bottom: 13.3rem;
+}
+#main .region .txtList .add09 {
+	color: #C62884;
+	left: 0;
+	bottom: 9rem;
+}
+#main .region .txtList .add10 {
+	color: #C82A51;
+	right: 14.7rem;
+	bottom: 5.9rem;
+}
+#main .producer .headLine01 {
+	margin-bottom: 5.5rem;
+}
+#main .producer .linkList {
+	margin: -4rem 0 10rem;
+}
+#main .producer .linkList li {
+	margin-top: 4rem;
+	width: 48.3%;
+}
+#main .producer .linkList a {
+	display: block;
+}
+#main .link {
+	margin-bottom: 10rem;
+}
+#main .link a {
+	display: block;
+}
+#main .photo {
+	margin-bottom: 9.5rem;
+}
+#main .photo p {
+	margin-top: 2.8rem;
+	text-align: center;
+}
