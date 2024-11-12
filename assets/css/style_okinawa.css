@@ -1,9 +1,9 @@
 /* 全体のフォントと行間、文字間の設定 */
 body {
-    font-family: 'Noto Sans JP', sans-serif; /* サイトと似たフォントを使用 */
+    font-family: 'Noto Sans JP', sans-serif; /* サイトとdb1346似たフォントを使用 */
     line-height: 1.8; /* ゆったりとした行間 */
     letter-spacing: 0.05em; /* 文字間の余裕 */
-    background-color: #eef7f0;
+    background-color: #f7dfdf;
 	color: #555; /* 基本の文字色をダークグレー */
 	
     margin: 0;
@@ -34,7 +34,7 @@ a, .button, .more-link {
 }
 
 a:hover, .button:hover, .more-link:hover {
-    color: #1faf6c; /* ホバー時の色変更 */
+    color: #db1346; /* ホバー時の色変更 */
 }
 
 /* 特定のエリアごとの設定 */
@@ -71,13 +71,13 @@ a:hover, .button:hover, .more-link:hover {
 
 /* 地域のタイトルとサブタイトル */
 .section-subtitle {
-    color: #1faf6c;
+    color: #db1346;
     font-size: 1.2em;
     margin: 0;
 }
 
 .section-title {
-    color: #1faf6c;
+    color: #db1346;
     font-size: 2.5em;
     margin: 10px 0;
 }
@@ -160,7 +160,7 @@ a:hover, .button:hover, .more-link:hover {
 
 .region-text {
     font-weight: bold;
-    color: #1faf6c;
+    color: #db1346;
     margin-top: 0;
 }
 
@@ -212,7 +212,7 @@ a:hover, .button:hover, .more-link:hover {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(31, 175, 108, 0.15); /* ホバー時の色 */
+    background-color: rgba(219, 19, 70, 0.15); /* ホバー時の色 */
     opacity: 0;
     transition: opacity 0.3s ease;
 }
@@ -232,7 +232,7 @@ a:hover, .button:hover, .more-link:hover {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
-  background-color: #1faf6c;
+  background-color: #db1346;
   border-radius: 25px;
   text-decoration: none;
   color: white;
@@ -259,7 +259,7 @@ a:hover, .button:hover, .more-link:hover {
   height: 0;
   border-top: 8px solid transparent;
   border-bottom: 8px solid transparent;
-  border-left: 12px solid #1faf6c; /* 三角形の色 */
+  border-left: 12px solid #db1346; /* 三角形の色 */
   transform: rotate(0deg); /* 向きを右に設定 */
   margin-left: 2px; /* 右寄りに微調整 */
   transition: border-left-color 0.3s ease;
