@@ -81,7 +81,7 @@
 				</div>
 			</section>
 			<div class="content">
-				<section class="region">
+				<section class="prefecture">
 					<h2 class="headLine01">地域からワイナリーを知る<span class="en">Know wineries by region</span></h2>
 					<div class="mapBox">
 						<div class="map">
@@ -176,17 +176,17 @@
 				$('.slideBox .foo').slick('slickPlay');
 			});
 
-			$('#main .region .map svg path,#main .region .txtList li a').on('mouseover', function () {
+			$('#main .prefecture .map svg path,#main .prefecture .txtList li a').on('mouseover', function () {
 				let name = $(this).data('name');
-				$('#main .region .map img').attr('src', './assets/img/index/jp_' + name + '_on.png');
+				$('#main .prefecture .map img').attr('src', './assets/img/index/jp_' + name + '_on.png');
 			});
-			$('#main .region .map svg path,#main .region .txtList li a').on('mouseout', function () {
-				$('#main .region .map img').attr('src', './assets/img/index/jp_off.png');
+			$('#main .prefecture .map svg path,#main .prefecture .txtList li a').on('mouseout', function () {
+				$('#main .prefecture .map img').attr('src', './assets/img/index/jp_off.png');
 			});
-			$('#main .region .map svg path').on('click', function () {
+			$('#main .prefecture .map svg path').on('click', function () {
 				let name = $(this).data('name');
 				console.log('path' + name);
-				$('#main .region .txtList li a').each(function () {
+				$('#main .prefecture .txtList li a').each(function () {
 					if ($(this).data('name') == name) {
 						window.location.href = $(this).attr('href');
 					}
