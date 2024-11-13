@@ -4,8 +4,7 @@ body {
     line-height: 1.8; /* ゆったりとした行間 */
     letter-spacing: 0.05em; /* 文字間の余裕 */
     background-color: #edf2f7;
-	color: #555; /* 基本の文字色をダークグレー */
-	
+    color: #555; /* 基本の文字色をダークグレー */
     margin: 0;
     padding: 0;
 }
@@ -38,7 +37,7 @@ a:hover, .button:hover, .more-link:hover {
 }
 
 /* 特定のエリアごとの設定 */
-.region-header, .region-title, .region-subtitle {
+.prefecture-header, .prefecture-title, .prefecture-subtitle {
     line-height: 1.6;
     letter-spacing: 0.05em;
     margin-bottom: 1em; /* 各エリアの間隔をゆったり */
@@ -53,7 +52,7 @@ a:hover, .button:hover, .more-link:hover {
 }
 
 /* 最初の説明セクション */
-.intro-section {
+.region-intro {
     display: flex;
     align-items: flex-start;
     justify-content: flex-start; /* 要素を左に揃える */
@@ -70,19 +69,24 @@ a:hover, .button:hover, .more-link:hover {
 }
 
 /* 地域のタイトルとサブタイトル */
-.section-subtitle {
+.region-title-en {
     color: #06a4cf;
     font-size: 1.2em;
     margin: 0;
 }
 
-.section-title {
+.region-title {
     color: #06a4cf;
     font-size: 2.5em;
     margin: 10px 0;
 }
 
 .intro-text {
+    color: #555;
+    line-height: 1.6;
+}
+
+.intro-text-en {
     color: #555;
     line-height: 1.6;
 }
@@ -101,64 +105,69 @@ a:hover, .button:hover, .more-link:hover {
 }
 
 /* 各地域セクションの設定 */
-.region {
+.prefecture {
     display: flex;
     align-items: flex-start;
     margin-bottom: 40px;
     gap: 20px;
 }
 
-.region-image {
+.prefecture-image {
     flex: 1;
 }
 
-.region-image img {
+.prefecture-image img {
     width: 100%; /* 画像の幅を100%に */
     max-width: 1000px; /* 画像の最大幅を設定 */
     height: auto;
     border-radius: 0; /* 角丸を無効に */
 }
 
-.region-content {
+.prefecture-content {
     flex: 1;
     background-color: #fff;
     padding: 20px;
 }
 
 /* タイトルとサブタイトルを横並びに配置 */
-.region-header {
+.prefecture-header {
     display: flex;
     align-items: center;
-	align-items: baseline; /* ベースラインで揃える */
+    align-items: baseline; /* ベースラインで揃える */
 }
 
-.region-title {
+.prefecture-title {
     font-size: 2rem;
     font-weight: bold;
     margin-right: 10px; /* タイトルとサブタイトルの間にスペースを追加 */
 }
 
-.region-subtitle {
+.prefecture-subtitle {
     font-size: 1.5rem;
     color: #555; /* サブタイトルの色を少し薄めに */
-	letter-spacing: 1px;
+    letter-spacing: 1px;
 }
 
-
 /* 地域名と色 */
-.region-title {
+.prefecture-title {
     font-size: 1.8em;
     margin: 0;
 }
 
-.region-subtitle {
+.prefecture-subtitle {
     font-size: 1.2em;
     margin-bottom: 15px;
     display: inline; /* タイトルの右横にサブタイトルを表示 */
     margin-left: 10px; /* タイトルとサブタイトルの間のスペース */
 }
 
-.region-text {
+.prefecture-text {
+    font-weight: bold;
+    color: #06a4cf;
+    margin-top: 0;
+}
+
+.prefecture-text-en {
     font-weight: bold;
     color: #06a4cf;
     margin-top: 0;
@@ -227,54 +236,53 @@ a:hover, .button:hover, .more-link:hover {
     margin-top: 20px;
 }
 
-
 .more-link {
-  display: inline-flex;
-  align-items: center;
-  padding: 10px 20px;
-  background-color: #06a4cf;
-  border-radius: 25px;
-  text-decoration: none;
-  color: white;
-  font-size: 16px; /* テキストのサイズ調整 */
-  font-weight: bold;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #06a4cf;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* テキストのサイズ調整 */
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
 }
 
 .more-link .circle {
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 24px;
-  height: 24px;
-  margin-left: 10px;
-  background-color: white;
-  border-radius: 50%;
-  transition: background-color 0.3s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
 }
 
 .more-link .triangle {
-  width: 0;
-  height: 0;
-  border-top: 8px solid transparent;
-  border-bottom: 8px solid transparent;
-  border-left: 12px solid #06a4cf; /* 三角形の色 */
-  transform: rotate(0deg); /* 向きを右に設定 */
-  margin-left: 2px; /* 右寄りに微調整 */
-  transition: border-left-color 0.3s ease;
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid #06a4cf; /* 三角形の色 */
+    transform: rotate(0deg); /* 向きを右に設定 */
+    margin-left: 2px; /* 右寄りに微調整 */
+    transition: border-left-color 0.3s ease;
 }
 
 /* ホバー時のスタイル */
 .more-link:hover {
-  background-color: #d1c490; /* 少し薄い色に変更 */
-  color: white;
+    background-color: #d1c490; /* 少し薄い色に変更 */
+    color: white;
 }
 
 .more-link:hover .triangle {
-  border-left-color: #d1c490; /* ホバー時に三角形の色も変更 */
+    border-left-color: #d1c490; /* ホバー時に三角形の色も変更 */
 }
 
 .more-link:hover .circle {
-  background-color: #f5f2e1; /* 円の色も少し薄い色に */
+    background-color: #f5f2e1; /* 円の色も少し薄い色に */
 }
