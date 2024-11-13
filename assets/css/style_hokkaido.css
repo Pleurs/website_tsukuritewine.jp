@@ -1,0 +1,509 @@
+/* 全体のフォントと行間、文字間の設定 */
+body {
+    font-family: 'Noto Sans JP', sans-serif; /* サイトと似たフォントを使用 */
+    line-height: 1.8; /* ゆったりとした行間 */
+    letter-spacing: 0.05em; /* 文字間の余裕 */
+    background-color: #f1edf7;
+    color: #555; /* 基本の文字色をダークグレー */
+    margin: 0;
+    padding: 0;
+}
+
+/* タイトルや見出しのゆったりとした行間と文字間 */
+h1, h2, h3, h4, h5, h6 {
+    line-height: 1.5; /* 見出し用の行間 */
+    letter-spacing: 0.07em; /* 見出し用の文字間 */
+    margin-bottom: 0.5em; /* 見出しと次の要素の間に余白 */
+    color: #555;
+}
+
+/* 段落の設定 */
+p {
+    line-height: 1.8; /* 読みやすい行間 */
+    letter-spacing: 0.05em; /* 段落用の文字間 */
+    margin-bottom: 1.5em; /* 段落間の余白を大きめに */
+}
+
+/* ボタンやリンクの行間と文字間 */
+a, .button, .more-link {
+    letter-spacing: 0.07em; /* リンクやボタンに少し広めの文字間 */
+    text-decoration: none;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+a:hover, .button:hover, .more-link:hover {
+    color: #8d6aac; /* ホバー時の色変更 */
+}
+
+/* 特定のエリアごとの設定 */
+.prefecture-header, .prefecture-title, .prefecture-subtitle {
+    line-height: 1.6;
+    letter-spacing: 0.05em;
+    margin-bottom: 1em; /* 各エリアの間隔をゆったり */
+}
+
+/* 全体のコンテナ設定 */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 20px;
+}
+
+/* 最初の説明セクション */
+.region-intro {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start; /* 要素を左に揃える */
+    gap: 30px; /* テキストと画像の間のスペースを調整 */
+    margin-bottom: 40px;
+    background-color: #fff;
+    padding: 40px;
+}
+
+
+.text-content {
+    max-width: 60%; /* テキストの幅を調整 */
+    text-align: left;
+}
+
+/* 地域のタイトルとサブタイトル */
+.region-title-en {
+    color: #8d6aac;
+    font-size: 1.2em;
+    margin: 0;
+}
+
+.region-title {
+    color: #8d6aac;
+    font-size: 2.5em;
+    margin: 10px 0;
+}
+
+.intro-text {
+    color: #555;
+    line-height: 1.6;
+}
+
+.intro-text-en {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* 地図エリアの設定 */
+.map {
+    max-width: 35%; /* 画像の幅を調整 */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.map img {
+    width: 100%;
+    height: auto;
+}
+
+/* 各地域セクションの設定 */
+.prefecture {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 40px;
+    gap: 20px;
+}
+
+.prefecture-image {
+    flex: 1;
+}
+
+.prefecture-image img {
+    width: 100%; /* 画像の幅を100%に */
+    max-width: 1000px; /* 画像の最大幅を設定 */
+    height: auto;
+    border-radius: 0; /* 角丸を無効に */
+}
+
+.prefecture-content {
+    flex: 1;
+    background-color: #fff;
+    padding: 20px;
+}
+
+/* タイトルとサブタイトルを横並びに配置 */
+.prefecture-header {
+    display: flex;
+    align-items: center;
+    align-items: baseline; /* ベースラインで揃える */
+}
+
+.prefecture-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-right: 10px; /* タイトルとサブタイトルの間にスペースを追加 */
+}
+
+.prefecture-subtitle {
+    font-size: 1.5rem;
+    color: #555; /* サブタイトルの色を少し薄めに */
+    letter-spacing: 1px;
+}
+
+
+/* 地域名と色 */
+.prefecture-title {
+    font-size: 1.8em;
+    margin: 0;
+}
+
+.prefecture-subtitle {
+    font-size: 1.2em;
+    margin-bottom: 15px;
+    display: inline; /* タイトルの右横にサブタイトルを表示 */
+    margin-left: 10px; /* タイトルとサブタイトルの間のスペース */
+}
+
+.prefecture-text {
+    font-weight: bold;
+    color: #8d6aac;
+    margin-top: 0;
+}
+
+.prefecture-text-en {
+    font-weight: bold;
+    color: #8d6aac;
+    margin-top: 0;
+}
+
+/* ロゴ表示エリア */
+.logos {
+    display: flex;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.logos img {
+    width: 80px;
+    height: auto;
+}
+
+.winery-logos {
+    text-align: center; /* 中央揃え */
+    margin-bottom: 5px; /* 行ごとの余白を縮める */
+    font-size: 0; /* インラインブロックの間の余白を消す */
+}
+
+.winery-logo {
+    display: inline-block; /* インラインブロックで横並びに */
+    width: 100px; /* 固定幅 */
+    height: 100px; /* 固定高さ */
+    margin: 5px; /* 各画像の間にスペースを作る */
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease; /* ホバー時の変化の設定 */
+    vertical-align: top; /* 上揃えにすることで余白のズレを防ぐ */
+}
+
+.winery-logo:hover {
+    transform: scale(1.1); /* ホバー時に少し拡大 */
+}
+
+.winery-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: all 0.3s ease; /* 画像のスムーズな変化を維持 */
+}
+
+
+.winery-logo::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(141, 106, 172, 0.15); /* ホバー時の色 */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.winery-logo:hover::after {
+    opacity: 1;
+}
+
+
+.more-link-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.more-link {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #8d6aac;
+    border-radius: 25px;
+    text-decoration: none;
+    color: white;
+    font-size: 16px; /* テキストのサイズ調整 */
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+.more-link .circle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+    background-color: white;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.more-link .triangle {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 12px solid #8d6aac; /* 三角形の色 */
+    transform: rotate(0deg); /* 向きを右に設定 */
+    margin-left: 2px; /* 右寄りに微調整 */
+    transition: border-left-color 0.3s ease;
+}
+
+/* ホバー時のスタイル */
+.more-link:hover {
+    background-color: #d1c490; /* 少し薄い色に変更 */
+    color: white;
+}
+
+.more-link:hover .triangle {
+    border-left-color: #d1c490; /* ホバー時に三角形の色も変更 */
+}
+
+.more-link:hover .circle {
+    background-color: #f5f2e1; /* 円の色も少し薄い色に */
+}
+
+/*
+    ここからワイナリー
+*/
+.section-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.title-bar {
+    width: 6px;
+    height: 30px;
+    background-color: #1FAF6C;
+    margin-right: 10px;
+}
+
+h1, h2 {
+    color: #333;
+    margin: 0;
+}
+
+.location-button {
+    background-color: #1FAF6C;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.winery-intro {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.winery-image {
+    width: 40%;
+    height: auto;
+}
+
+.intro-content {
+    width: 60%;
+}
+
+.intro-text {
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+.winery-info, .access, .staff-intro, .recommended-wines {
+    padding: 20px;
+    background-color: white;
+    margin-bottom: 40px;
+}
+
+.winery-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+
+.winery-info th, .winery-info td {
+    padding: 8px 34px; /* 左右にさらにゆとりを持たせる */
+    border-bottom: 0.5px solid #1FAF6C;
+    text-align: left;
+}
+
+.winery-info th {
+    white-space: nowrap;
+    font-weight: normal;
+    color: #333;
+    position: relative;
+    padding-left: 30px; /* 見出しの前にスペースを追加 */
+}
+
+.winery-info th::after {
+    content: "";
+    position: absolute;
+    top: 8px;
+    bottom: 8px;
+    right: 0;
+    width: 0.5px;
+    background-color: #1FAF6C;
+    margin-left: 8px; /* 縦線とテキストの間隔をさらに広げる */
+}
+
+.winery-info td {
+    color: #333;
+}
+
+.winery-info td a {
+    color: #333;
+    text-decoration: underline;
+}
+
+.access iframe {
+    margin-bottom: 40px;
+}
+
+.staff-intro {
+    text-align: center;
+}
+
+.staff-name {
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+.staff-image-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.tsukurite-image {
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+}
+
+.staff-description {
+    line-height: 1.6;
+    margin-top: 15px;
+}
+
+.recommended-wines {
+    text-align: center;
+}
+
+.wine-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.wine-item {
+    display: flex;
+    gap: 20px;
+    align-items: center; /* 画像とテキストを中央揃え */
+    justify-content: center;
+    width: 100%;
+    max-width: 800px;
+}
+
+.wine-image {
+    width: 70px;
+    height: auto;
+    flex-shrink: 0; /* 画像が縮小しないようにする */
+}
+
+.wine-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.wine-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.wine-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.wine-item {
+    display: flex;
+    gap: 40px; /* wine-imageとwine-infoの間隔を広げる */
+    align-items: center;
+    justify-content: flex-start;
+    width: 80%;
+    max-width: 600px;
+    margin: auto;
+}
+
+.wine-image {
+    width: 70px;
+    height: auto;
+    flex-shrink: 0; /* 画像が縮小しないように */
+}
+
+.wine-info {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.wine-header {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.wine-name {
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.wine-price {
+    font-weight: bold;
+    color: #666;
+    white-space: nowrap;
+}
+
+.wine-description {
+    margin-top: 5px;
+}
