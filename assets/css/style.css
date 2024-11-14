@@ -141,6 +141,7 @@ body {
 	opacity: 1;
 }
 #gFooter .fNavi {
+	display:none; /* いったん非表示 */
 	justify-content: center;
 	margin-bottom: 2.3rem;
 }
