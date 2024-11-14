@@ -163,6 +163,7 @@ body {
 }
 #gFooter .sns {
 	margin-bottom: 6rem;
+	display: none;
 }
 #gFooter .sns .ttl {
 	margin-bottom: 2rem;

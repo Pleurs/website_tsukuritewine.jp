@@ -35,7 +35,7 @@
 	letter-spacing: 0.8px;
 	text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.50);
 	text-align: center;
-	background: url(../img/index/arrow.svg) no-repeat center bottom;
+	background: url(../image/index/arrow.svg) no-repeat center bottom;
 }
 #main .slideBox {
 	margin: 0 auto 8.5rem;
@@ -162,86 +162,86 @@
 	max-height: 100%;
 	width: auto;
 }
-#main .region {
+#main .prefecture {
 	margin: 0 auto 10rem;
 	max-width: 80rem;
 	position: relative;
 }
-#main .region .headLine01 {
+#main .prefecture .headLine01 {
 	position: absolute;
 	left: 1rem;
 	top: 18.5rem;
 }
-#main .region .map img {
+#main .prefecture .map img {
 	margin-left: -1rem;
 }
-#main .region .map svg {
+#main .prefecture .map svg {
 	position: absolute;
 	left: -1rem;
 	top: 0;
 	width: 100%;
 	height: 100%;
 }
-#main .region .map svg path {
+#main .prefecture .map svg path {
 	fill: transparent;
 	cursor: pointer;
 }
-#main .region .txtList li a {
+#main .prefecture .txtList li a {
 	color: inherit;
 }
-#main .region .txtList li a:hover {
+#main .prefecture .txtList li a:hover {
 	opacity: 1;
 }
-#main .region .txtList li {
+#main .prefecture .txtList li {
 	position: absolute;
 	font-size: 2.8rem;
 }
-#main .region .txtList .add01 {
+#main .prefecture .txtList .add01 {
 	color: #6C4DB2;
 	left: 42.8rem;
 	top: 10rem;
 }
-#main .region .txtList .add02 {
+#main .prefecture .txtList .add02 {
 	color: #2F6DBD;
 	right: 17rem;
 	top: 35.5rem;
 }
-#main .region .txtList .add03 {
+#main .prefecture .txtList .add03 {
 	color: #32AD5B;
 	left: 28rem;
 	top: 40rem;
 }
-#main .region .txtList .add04 {
+#main .prefecture .txtList .add04 {
 	color: #319FD6;
 	right: 21rem;
 	top: 51.6rem;
 }
-#main .region .txtList .add05 {
+#main .prefecture .txtList .add05 {
 	color: #B8B63C;
 	left: 25.2rem;
 	top: 52.8rem;
 }
-#main .region .txtList .add06 {
+#main .prefecture .txtList .add06 {
 	color: #DA7F4A;
 	left: 11.1rem;
 	top: 57rem;
 }
-#main .region .txtList .add07 {
+#main .prefecture .txtList .add07 {
 	color: #46BCB9;
 	right: 37.1rem;
 	top: 65.1rem;
 }
-#main .region .txtList .add08 {
+#main .prefecture .txtList .add08 {
 	color: #E568A2;
 	left: 21.5rem;
 	bottom: 13.3rem;
 }
-#main .region .txtList .add09 {
+#main .prefecture .txtList .add09 {
 	color: #C62884;
 	left: 0;
 	bottom: 9rem;
 }
-#main .region .txtList .add10 {
+#main .prefecture .txtList .add10 {
 	color: #C82A51;
 	right: 14.7rem;
 	bottom: 5.9rem;
